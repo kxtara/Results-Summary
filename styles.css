@@ -1,3 +1,5 @@
+
+
 :root{
     /*primary colors*/
     --Light-red: hsl(0, 100%, 67%);
@@ -21,7 +23,7 @@
 }
 
 body{
-    font-family: hanken grotesk;
+    font-family: "hanken grotesk",sans-serif;
     width: 100%;
     height: 100vh;
     margin: 0;
@@ -169,8 +171,14 @@ button{
     cursor: pointer;
 }
 
+/* interactive elements*/
 button:active{
     background: linear-gradient(var(--Violet-blue),var(--Light-royal-blue));
+}
+
+.visual:hover,.verbal:hover,.memory:hover,.reaction:hover{
+    box-shadow: 2px 2px 5px rgba(128, 128, 128, 0.757);
+    cursor: pointer;
 }
 
 /*desktop display*/
