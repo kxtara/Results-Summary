@@ -1,0 +1,212 @@
+:root{
+    /*primary colors*/
+    --Light-red: hsl(0, 100%, 67%);
+    --Orangey-yellow: hsl(39, 100%, 56%);
+    --Green-teal: hsl(166, 100%, 37%);
+    --Cobalt-blue: hsl(234, 85%, 45%);
+    /*gradients*/
+    --Light-slate-blue: hsl(252, 100%, 67%); 
+    --Light-royal-blue: hsl(241, 81%, 54%);  
+    --Violet-blue: hsla(256, 72%, 46%, 1);  
+    --Persian-blue: hsla(241, 72%, 46%, 0); 
+    /*neutral*/
+    --White: hsl(0, 0%, 100%);
+    --Pale-blue: hsl(221, 100%, 96%);
+    --Light-lavender: hwb(241 78% 0%);
+    --Dark-gray-blue: hsl(224, 30%, 27%);
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: hanken grotesk;
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+}
+/*'your result' section*/
+.result{
+    background: linear-gradient(var(--Light-slate-blue),var(--Light-royal-blue) );
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    margin-top: -13px;
+}
+
+.result h1#your-result{
+    color:var(--Light-lavender);
+    text-align: center;
+    font-size: 15px;
+    font-weight: 400;
+    padding: 30px 0 10px 0;
+}
+
+.result-text{
+    background: linear-gradient(var(--Violet-blue)20%,var(--Persian-blue));
+    width: 110px;
+    height: 110px;
+    border-radius: 60px;
+    margin: auto;
+}
+
+.result-text span{
+    color: var(--White);
+    font-weight: 600;
+    font-size: 45px;
+    position: relative;
+    left: 30px;
+    top: 15px;
+}
+
+.result-text span.transparent-results{
+    color: hsla(241, 100%, 89%, 0.5);
+    font-size: 13px;
+    position: relative;
+    left: -19px;
+    top: 45px;
+}
+
+#paragraph-header{
+    color: var(--White);
+    text-align: center;
+    font-weight: 400;
+}
+
+p{
+    text-align: center;
+    color: var(--Light-lavender);
+    padding: 0 20px 25px 20px;
+}
+/*'summary' section*/
+.summary{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#summary{
+    color: var(--Dark-gray-blue);
+    font-size: 18px;
+    align-self: flex-start;
+    padding-left: 75px;
+}
+/*targeting all 'tabs' classes*/
+div.tabs .transparent-results{
+    color:hsla(224, 30%, 27%, 0.5);
+}
+
+div.tabs .tab-results{
+    font-weight: 500;
+    font-size: 15px;
+    padding-left: 90px;
+}
+
+div.verbal .tab-results,div.visual .tab-results{
+    padding-left: 100px;
+}
+
+.tabs{
+    display: flex;
+    align-items: center;
+    margin: 0 20px 15px 0;
+    width: 260px;
+    height: 40px;
+    border-radius: 10px;
+}
+
+.summary-titles{
+    padding-left: 9px;
+    font-size: 15px;
+}
+
+svg{
+    margin-left: 9px;
+}
+/* titles ( . ) of summary results and background  ( # ) */
+#reaction{
+    color: var(--Light-red);
+}
+
+.reaction{
+    background:hsla(0, 100%, 67%,6%);
+}
+
+#memory{
+    color: var(--Orangey-yellow);
+}
+
+.memory{
+    background: hsla(39, 100%, 56%,6%);
+}
+
+#verbal{
+    color: var(--Green-teal);
+}
+
+.verbal{
+    background: hsla(166, 100%, 37%,6%);
+}
+
+#visual{
+    color: var(--Violet-blue);
+}
+
+.visual{
+    background: hsla(256, 72%, 46%, 6%);
+}
+
+button{
+    font-size: 15px;
+    color: var(--White);
+    background: var(--Dark-gray-blue);
+    border: none;
+    width: 230px;
+    height: 35px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+button:active{
+    background: linear-gradient(var(--Violet-blue),var(--Light-royal-blue));
+}
+
+/*desktop display*/
+
+@media only screen and (min-width:760px) {
+    main,.summary{
+        display: flex;
+        height: 100vh;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .result{
+        border-radius: 15px;
+        width: 250px;
+        position: relative;
+        left: 15px;
+        top: 5px;
+    }
+
+    .summary{
+        padding: 0px 15px 0px 25px;
+        width: 300px;
+        height: 365px;
+        border-radius: 15px;
+        box-shadow: 2px 2px 15px var(--Light-lavender);
+    }
+
+    #summary{
+        margin-top: -20px;
+        padding-left: 30px;
+    }
+
+    button{
+        position: relative;
+        top: 20px;
+    }
+
+}
