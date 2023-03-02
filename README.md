@@ -1,6 +1,6 @@
-# Frontend Mentor - Product preview card component solution
+# Frontend Mentor - Results summary component solution
 
-This is a solution to the [Results summary component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/resultssummary-component-GO7UmttRfa). 
+This is a solution to the [Results summary component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/results-summary-component-CE_K6s0maV). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
 
 ## Table of contents
 
@@ -12,56 +12,68 @@ This is a solution to the [Results summary component challenge on Frontend Mento
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
   - [Continued development](#continued-development)
+  - [Useful resources](#useful-resources)
 - [Author](#author)
+
 
 ## Overview
 
-This project is a results summary component that I really enjoy taking part in.
+This was a fun project that took me about a day to complete. I find that when I'm having trouble figuring something out, stepping away for a few minutes is good.
 
 ### The challenge
 
 Users should be able to:
 
-- View the optimal layout depending on their device's screen size
-- See hover and focus states for interactive elements
+- View the optimal layout for the interface depending on their device's screen size
+- See hover and focus states for all interactive elements on the page
 
 ### Screenshot
 
-![ScreenShot](https://raw.github.com/kxtara/product-preview-card/main/images/desktop.png)
+Desktop: 
+
+![ScreenShot](https://raw.github.com/kxtara/results-summary/main/images/desktop.png)
+
+Mobile:
+
+![ScreenShot](https://raw.github.com/kxtara/results-summary/main/images/mobile.png)
 
 ### Links
 
-- Solution URL: [Frontend Mentor ](https://www.frontendmentor.io/solutions/resultssummary-component-1qbAICJKvf)
-- Live Site URL: [Github ](https://kxtara.github.io/results-summary/)
+- Solution URL: [https://www.frontendmentor.io/solutions/resultssummary-component-1qbAICJKvf]
+- Live Site URL: [(https://kxtara.github.io/results-summary/]
 
 ## My process
 
-The first thing I did was go through all the files that were provided for this project. Doing that gave me an idea of how the layout should be and what CSS properties I was going to use. For example, I used the display property to create a flexbox.
+The first thing I did was decide how I was going to structure the HTML. After I started with the HTML, I proceeded to the CSS.
 
 ### Built with
 
 - Semantic HTML5 markup
 - CSS custom properties
 - Flexbox
+- Mobile-first workflow
 
 ### What I learned
 
-During this project, I learned how to minimize my code while getting the same results. 
+This project put my CSS knowledge to the test, and I learned more about sizing and linear gradients. 
+
+To see how you can add code snippets, see below:
 
 ```css
-main,.summary{
-        display: flex;
-        height: 100vh;
-        align-items: center;
-        justify-content: center;
-    }
+.result-text{
+    background: linear-gradient(var(--Violet-blue)20%,var(--Persian-blue));
+}
 ```
 
 ### Continued development
 
-Moving forward, I want to continue learning about accessibility, grid, and CSS transforms.
+Moving forward, I want to continue learning how to make projects that are responsive and visually pleasing for a user.
+
+### Useful resources
+
+- [Google Fonts](https://fonts.google.com/) - I used this site for the font that is used in this project.
 
 ## Author
 
-- Frontend Mentor - [@kxtara](https://www.frontendmentor.io/profile/kxtara)
-- Twitter - [@kiarahoheb](https://www.twitter.com/kiarahoheb)
+- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/kxtara)
+- Twitter - [@yourusername](https://www.twitter.com/kiarahoheb)
